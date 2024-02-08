@@ -1,0 +1,66 @@
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.main-container {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(250, 249, 249, 0.515);
+  margin: 120px auto;
+  max-width: 600px;
+  max-height: 600px;
+  padding: 20px;
+  border-radius: 5px;
+}
+header {
+  margin-bottom: 40px;
+}
+h1 {
+  text-align: center;
+  color: rgb(49, 48, 48);
+}
+
+.input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid rgb(68, 67, 67);
+  border-radius: 3px;
+  background-color: rgba(237, 239, 241, 0.619);
+  font-size: 15px;
+}
+.submit-button {
+  width: 80px;
+  padding: 12px;
+  border: 1px solid rgb(68, 67, 67);
+  border-radius: 3px;
+  background-color: rgb(68, 67, 67);
+  color: rgb(240, 240, 237);
+  text-align: center;
+  font-size: 14px;
+}
+
+.quote {
+  padding: 10px;
+  margin: 20px 0;
+  color: rgb(40, 40, 40);
+  text-align: center;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.author {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(40, 40, 40);
+}
+footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}

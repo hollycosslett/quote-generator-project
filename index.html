@@ -7,33 +7,47 @@
     <title>Quote Generator</title>
   </head>
   <body>
-    <header><h1>Quote Generator</h1></header>
-    <main>
-      <form>
-        <input type="text" placeholder="Enter a topic..." />
-        <input type="submit" required autofocus autocomplete="off" />
-      </form>
-      <br />
-      <div class="quote" id="quote">
-        The only thing we have to fear is fear itself. -Franklin D. Roosevelt
-      </div>
-      <br />
-    </main>
-    <footer>
-      This page was coded by
-      <a href="https://github.com/hollycosslett" target="_blank"
-        >Holly Cosslett</a
-      >, open-sourced by
-      <a
-        href="https://github.com/hollycosslett/quote-generator-project"
-        target="_blank"
-        >Github</a
-      >
-      and hosted on
-      <a href="https://quote-generator-shecodes.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+    <video autoplay muted loop class="video">
+      <source src="media/road.mp4" type="video/mp4" />
+    </video>
+    <div class="main-container">
+      <header><h1>Quote Generator</h1></header>
+      <main>
+        <form>
+          <input type="text" placeholder="Enter a topic..." class="input" />
+          <input
+            type="submit"
+            required
+            autofocus
+            autocomplete="off"
+            class="submit-button"
+          />
+        </form>
+        <br />
+        <div class="quote" id="quote">
+          'The only thing we have to fear is fear itself.'
+          <br />
+          <br />
+          <span class="author">Franklin D. Roosevelt</span>
+        </div>
+        <br />
+      </main>
+      <footer>
+        This page was coded by
+        <a href="https://github.com/hollycosslett" target="_blank"
+          >Holly Cosslett</a
+        >, open-sourced by
+        <a
+          href="https://github.com/hollycosslett/quote-generator-project"
+          target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://quote-generator-shecodes.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
