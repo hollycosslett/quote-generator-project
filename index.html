@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Quote Generator</title>
   </head>
@@ -13,7 +14,7 @@
     <div class="main-container">
       <header><h1>Quote Generator</h1></header>
       <main>
-        <form>
+        <form id="quoteGeneratorForm">
           <input type="text" placeholder="Enter a topic..." class="input" />
           <input
             type="submit"
@@ -24,12 +25,7 @@
           />
         </form>
         <br />
-        <div class="quote" id="quote">
-          'The only thing we have to fear is fear itself.'
-          <br />
-          <br />
-          <span class="author">Franklin D. Roosevelt</span>
-        </div>
+        <div class="quote" id="quote"></div>
         <br />
       </main>
       <footer>
