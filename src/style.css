@@ -11,7 +11,9 @@
 }
 
 .main-container {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: rgba(250, 249, 249, 0.515);
   margin: 120px auto;
   max-width: 600px;
@@ -24,43 +26,86 @@ header {
 }
 h1 {
   text-align: center;
-  color: rgb(49, 48, 48);
+  color: rgba(49, 48, 48, 0.875);
 }
 
+.form-container {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px;
+  border: 1px solid rgba(31, 31, 31, 0.142);
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 10px;
+}
+.instructions {
+  font-size: small;
+  color: rgba(49, 48, 48, 0.819);
+}
 .input {
+  color: rgb(40, 40, 40);
+  font-weight: bold;
   width: 80%;
   padding: 12px;
-  border: 1px solid rgb(68, 67, 67);
+  border: 1px solid rgba(56, 56, 57, 0.688);
   border-radius: 3px;
-  background-color: rgba(237, 239, 241, 0.619);
+  background-color: rgba(97, 97, 95, 0.253);
   font-size: 15px;
 }
 .submit-button {
   width: 80px;
   padding: 12px;
-  border: 1px solid rgb(68, 67, 67);
+  margin-left: 4px;
+  border: 1px solid rgba(38, 39, 40, 0.688);
   border-radius: 3px;
-  background-color: rgb(68, 67, 67);
-  color: rgb(240, 240, 237);
+  background-color: rgba(38, 39, 40, 0.688);
+  color: rgba(232, 231, 222, 0.817);
   text-align: center;
   font-size: 14px;
+}
+
+.submit-button:hover {
+  background-color: rgba(97, 97, 95, 0.253);
+  color: rgb(52, 51, 51);
 }
 
 .quote {
   padding: 10px;
   margin: 20px 0;
+  border: 1px solid rgba(31, 31, 31, 0.142);
+  border-radius: 4px;
   color: rgb(40, 40, 40);
   text-align: center;
   font-size: 22px;
   font-weight: bolder;
 }
-.author {
-  font-weight: 500;
-  font-size: 18px;
-  color: rgb(40, 40, 40);
+.hidden {
+  display: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.generating {
+  animation: blink 1s step-start 0s infinite;
 }
 footer {
   margin-top: 10px;
   text-align: center;
   font-size: 14px;
+  color: rgba(49, 48, 48, 0.938);
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: rgb(49, 48, 48);
 }
